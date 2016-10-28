@@ -86,6 +86,10 @@ PRODUCT_COPY_FILES +=  \
     vendor/nexus/prebuilt/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
     vendor/nexus/prebuilt/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
 
+# Copy APNs
+ PRODUCT_COPY_FILES += \
+    vendor/nexus/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
+
 # Boot animations
 $(call inherit-product-if-exists, vendor/nexus/products/bootanimation.mk)
 
