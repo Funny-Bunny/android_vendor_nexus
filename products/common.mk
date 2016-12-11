@@ -36,6 +36,10 @@ PRODUCT_PACKAGES += \
     Busybox \
     LockClock
 
+# Include explicitly to work around GMS issues
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full
+
 # Init.d script support
 PRODUCT_COPY_FILES += \
     vendor/nexus/prebuilt/common/bin/sysinit:system/bin/sysinit \
