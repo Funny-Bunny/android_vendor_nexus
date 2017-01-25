@@ -21,6 +21,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.rotation_locked=true \
     ro.opa.eligible_device=true
 
+# Jack server heap size
+export ANDROID_JACK_VM_ARGS += "-Xmx4096m"
+
 # Common overlay
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/nexus/overlay/common
