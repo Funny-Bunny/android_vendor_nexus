@@ -45,3 +45,6 @@ PRODUCT_COPY_FILES += \
     vendor/nexus/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
     vendor/nexus/prebuilt/common/bin/50-base.sh:system/addon.d/50-base.sh \
 
+# PN version
+$(call inherit-product-if-exists, vendor/nexus/products/version.mk)
+
