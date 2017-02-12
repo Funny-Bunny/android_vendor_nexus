@@ -76,6 +76,10 @@ ADDITIONAL_DEFAULT_PROPERTIES := \
 PRODUCT_PROPERTY_OVERRIDES += \
     net.tethering.noprovisioning=true
 
+# Thank you, please drive thru!
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.dun.override=0
+
 # Boot animations
 $(call inherit-product-if-exists, vendor/nexus/products/bootanimation.mk)
 
