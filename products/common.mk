@@ -58,6 +58,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.wfd.nohdcp=1
 
+# Allow tethering without provisioning app
+PRODUCT_PROPERTY_OVERRIDES += \
+    net.tethering.noprovisioning=true
+
 # PN version
 $(call inherit-product-if-exists, vendor/nexus/products/version.mk)
 
