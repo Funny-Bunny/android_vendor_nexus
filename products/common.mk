@@ -80,6 +80,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.dun.override=0
 
+# Camera Effects for devices without a vendor partition
+PRODUCT_COPY_FILES +=  \
+    vendor/nexus/prebuilt/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
+    vendor/nexus/prebuilt/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
+
 # Boot animations
 $(call inherit-product-if-exists, vendor/nexus/products/bootanimation.mk)
 
