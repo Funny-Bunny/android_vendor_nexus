@@ -45,6 +45,10 @@ PRODUCT_COPY_FILES += \
     vendor/nexus/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
     vendor/nexus/prebuilt/common/bin/50-base.sh:system/addon.d/50-base.sh \
 
+# Disable HDCP check
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.wfd.nohdcp=1
+
 # PN version
 $(call inherit-product-if-exists, vendor/nexus/products/version.mk)
 
