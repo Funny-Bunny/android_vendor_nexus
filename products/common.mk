@@ -38,6 +38,11 @@ PRODUCT_PACKAGES += \
     Busybox \
     LockClock
 
+# Telephony packages
+PRODUCT_PACKAGES += \
+    Stk \
+    CellBroadcastReceiver
+
 # Include explicitly to work around GMS issues
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full
