@@ -37,3 +37,9 @@ PRODUCT_COPY_FILES += \
     vendor/nexus/prebuilt/common/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
     vendor/nexus/prebuilt/common/etc/init.d.rc:root/init.d.rc
 
+# Backup Tool
+PRODUCT_COPY_FILES += \
+    vendor/nexus/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/nexus/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
+    vendor/nexus/prebuilt/common/bin/50-base.sh:system/addon.d/50-base.sh \
+
