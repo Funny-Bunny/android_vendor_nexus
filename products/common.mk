@@ -1,3 +1,5 @@
+EXCLUDE_SYSTEMUI_TESTS := true
+
 PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
