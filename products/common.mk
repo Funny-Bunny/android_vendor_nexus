@@ -60,3 +60,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # PN version
 $(call inherit-product-if-exists, vendor/nexus/products/version.mk)
 
+# Pull in Prebuilt applications for phones
+$(call inherit-product-if-exists, vendor/prebuilt/prebuilt.mk)
+
