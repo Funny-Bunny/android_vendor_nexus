@@ -12,6 +12,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.network_required=false \
     ro.setupwizard.gservices_delay=-1 \
     ro.com.android.dataroaming=false \
+    ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent \
     drm.service.enabled=true \
     net.tethering.noprovisioning=true \
     persist.sys.dun.override=0 \
