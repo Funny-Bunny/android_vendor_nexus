@@ -30,3 +30,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Busybox \
     LockClock
+
+# Init.d script support
+PRODUCT_COPY_FILES += \
+    vendor/nexus/prebuilt/common/bin/sysinit:system/bin/sysinit \
+    vendor/nexus/prebuilt/common/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
+    vendor/nexus/prebuilt/common/etc/init.d.rc:root/init.d.rc
+
