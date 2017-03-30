@@ -40,7 +40,8 @@ PRODUCT_COPY_FILES += \
 # Extra packages
 PRODUCT_PACKAGES += \
     Busybox \
-    LockClock
+    LockClock \
+    OmniStyle
 
 # Telephony packages
 PRODUCT_PACKAGES += \
