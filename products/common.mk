@@ -41,7 +41,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Busybox \
     LockClock \
-    OmniStyle
+    OmniStyle \
+    ThemeInterfacer
 
 # Telephony packages
 PRODUCT_PACKAGES += \
